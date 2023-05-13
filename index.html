@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- title -->
+    <title>OCR</title>
+</head>
+<body>
+    
+    
+    <div class="maindiv">
+        <nav class="navbar">
+          <h1>optical character reader</h1>
+          <ul>
+            <li><a href="@">Home</a></li>
+            <li><a href="@">About</a></li>
+            <li><a href="@">Team</a></li>
+            <li><a href="@">Contact</a></li>
+            <li><a href="@">Help Desk</a></li>
+            </ul>
+          </nav>
+          <div class="content">
+            <!-- <h1>PDF TO DOC</h1> -->
+            <div class="upper">
+                <!-- <form> -->
+                <label>Select File Type:</label>
+                <select id="file_type">
+                    <option value="IMAGE">IMAGE</option>
+                    <option value="PDF">PDF</option>
+                </select>
+                <!-- </form> -->
+                <div class="upper">
+                    <input type="file" id="input_file">
+                    <label for="input_file">
+                        Upload Tile 
+                    </label>
+                    <button id="start">Start</button>
+                    <div id="progress"></div>
+                </div>
+    
+            </div>
+
+            <div class="bottom">
+                <!-- <div>
+                    <img src="">
+                </div> -->
+                <div>
+                    <textarea id="showtext" placeholder="text"></textarea>
+                </div>
+            </div>
+            <div class="download-btn">
+                <button id="Download">Download</button>
+            </div>
+          </div>
+      </div>
+
+    <!-- script -->
+    <script src="https://unpkg.com/tesseract.js@v2.0.0-alpha.13/dist/tesseract.min.js"></script>
+    <script src="script.js" ></script>
+</body>
+</html>

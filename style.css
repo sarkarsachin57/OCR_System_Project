@@ -1,0 +1,206 @@
+/* navbar */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.maindiv{
+
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+    background-image: linear-gradient(135deg, #d6eaed 0%, #f3dada 100%);
+    /* background-image: url(images/makaut.jpg); */
+    /* background-attachment: fixed; */
+}
+.navbar{
+
+    height: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;    
+}
+.navbar h1{
+
+    width: 55%;
+    font-size: 50px;
+    font-weight: bolder;
+    color: chocolate;
+    text-transform: uppercase;
+    text-shadow: 0 5px 5px black;
+}
+.navbar ul li{
+
+    width: 45%;
+    display: inline;
+    list-style-type: none;
+    padding: 0 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    position: relative;
+}
+.navbar ul li a{
+
+    text-decoration: none;
+    color: black;
+    text-transform: none;
+}
+.navbar ul li::after{
+
+    content: " ";
+    height: 3px;
+    width: 0;
+    background-color: blue;
+    bottom: -13px;
+    left: 0;
+    position: absolute;
+}
+.navbar ul li:hover::after{
+    
+    cursor: pointer;
+    width: 100%;
+    transition: 0.8s;
+    background-color: aqua;
+}
+.content{
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+}
+.content h2{
+
+    font-size: 40px;
+    text-shadow: 0 6px 5px black;
+    margin-bottom: 5px;
+}
+/* ocr */
+.content h1{
+
+    margin-bottom: 50px;
+    padding: 30px;
+    color: red;
+    text-shadow: 11px 1px 10px red;
+}
+.upper button{
+
+    width: 200px;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 30px 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: rgb(17, 11, 11);
+    background-color: coral;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.upper button:hover{
+
+    background: transparent;
+    transition: 0.8s;
+    border: 1px solid rgb(2, 2, 17);
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);    
+    color: black;
+}  
+.upper input[type="file"] {
+
+    display: none;
+}
+label{
+
+    padding: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 90px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: rgb(17, 11, 11);
+    background: rgb(244,117,199);
+    background: linear-gradient(90deg, rgba(244,117,199,1) 0%, rgba(158,119,209,1) 0%, rgba(73,151,173,1) 0%, rgba(8,112,86,1) 100%, rgba(25,133,229,1) 100%, rgba(0,212,255,1) 100%, rgba(17,183,231,1) 100%);
+    letter-spacing: 2px;
+}
+select{
+
+    font-size: 20px;
+    padding: 20px;
+    width: 505px;
+    height: 70px;
+    text-align: center;
+    border: none;
+    letter-spacing: 2px;
+    color: black;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(69,35,57,1) 0%, rgba(0,212,255,1) 0%, rgba(25,133,229,1) 0%, rgba(200,27,121,1) 0%, rgba(122,117,128,1) 0%, rgba(224,91,181,1) 100%, rgba(191,119,209,1) 100%);
+    border-radius: 10px;
+    font-weight: 600;
+}
+div textarea{
+    resize: none;
+    width: calc(100% - 51px);
+    height: calc(100% - 51px);
+    padding: 10px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(118, 118, 118);
+    text-transform: capitalize;
+    background-color: rgb(196, 228, 163);
+    resize: vertical;
+    
+}
+/* progress */
+
+#progress{
+    
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.download-btn button{
+
+    font-size: 20px;
+    padding: 20px;
+    width: 305px;
+    height: 70px;
+    margin-top: 50px;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.container{
+    margin-top: 50px;
+}
+.bottom{
+    margin-top: 30px;
+    display: flex;
+    
+}
+.bottom div{
+
+    flex: 1;
+    border: 4px solid rgb(118, 118, 118);
+    height: 250px;
+    margin-left: 500px;
+    margin-right: 490px;
+    background-color: rgb(243, 194, 163);
+}
+.bottom div textarea{
+    resize: none;
+    width: calc(100% - 21px);
+    height: calc(100% - 21px);
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
